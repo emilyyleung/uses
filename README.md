@@ -35,6 +35,7 @@ A curated list of software I use regularly for software development — across c
 | Tool | Purpose | Notes |
 |------|---------|-------|
 | **Postman** | API testing | REST/GraphQL request building and testing |
+| [**Bruno**](https://www.usebruno.com/) | API testing | Git friendly REST client for building and testing |
 | **Chrome DevTools** | Browser debugging | Includes network, performance, and React profiler |
 
 ---
