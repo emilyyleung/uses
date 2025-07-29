@@ -10,7 +10,7 @@ A curated list of software I use regularly for software development — across c
 
 | Tool | Purpose | Notes |
 |------|---------|-------|
-| [**VS Code**](https://code.visualstudio.com/) | Primary code editor | Extensions: Prettier, ESLint, GitLens, Tailwind CSS IntelliSense |
+| [**VS Code**](https://code.visualstudio.com/) | Primary code editor | Extensions: Tailwind CSS IntelliSense, Night Owl (Code Editor Theme), Auto Close Tag, Auto Rename Tag, Autodesk Forge Tools, Azure App Service, Azure Databases, Azure Storage, Azure Virtual Machines, Bracker Pair Colorizer 2, CSS Peek, EditorConfig for VS Code, ES7 React/Redux/GraphQL/React-Native snippets, ESLint, indent-rainbow, Node.js Modules Intellisense, PostCSS Language Support, Prettier - Code formatter, Prisma (https://marketplace.visualstudio.com/items?itemName=Prisma.prisma), TODO Highlight, Live Share Extension Pack,  |
 | **Visual Studio Community** | IDE for .NET/C++ projects | Used for heavier or legacy projects |
 | [**Windows Terminal**](https://github.com/microsoft/terminal) | Terminal emulator | With WSL2 and PowerShell profiles |
 | [**WSL2 (Ubuntu)**](https://learn.microsoft.com/en-us/windows/wsl/install) | Linux development environment on Windows | Allows native Unix tooling inside Windows |
