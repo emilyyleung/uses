@@ -54,7 +54,7 @@ A categorized list of tools, frameworks, and platforms I regularly use — for d
 | [MongoDB](https://www.mongodb.com/) | NoSQL document database for schema-less data |
 | [Redis](https://redis.io/) | High-speed in-memory key-value store used for caching and pub/sub |
 | [Elasticsearch](https://www.elastic.co/elasticsearch/) | Distributed search engine for fast full-text and filter queries |
-| [Navicat](https://www.navicat.com/) | GUI database client used for managing PostgreSQL and MySQL databases visually |
+| [Navicat - version 16.3.12](https://www.navicat.com/) | GUI database client used for managing PostgreSQL and MySQL databases visually |
 | [MongoDB Compass](https://www.mongodb.com/products/compass) | MongoDB’s official GUI for schema exploration and ad hoc queries |
 
 ---
