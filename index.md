@@ -82,8 +82,6 @@ A categorized list of tools, frameworks, and platforms I regularly use — for d
 
 ---
 
-## 🐍 VSCode Plugins
-
 ## 🧩 VS Code Plugins
 
 | Plugin | Purpose |
