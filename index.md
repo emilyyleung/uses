@@ -82,6 +82,36 @@ A categorized list of tools, frameworks, and platforms I regularly use — for d
 
 ---
 
+## 🐍 VSCode Plugins
+
+## 🧩 VS Code Plugins
+
+| Plugin | Purpose |
+|--------|---------|
+| [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) | Automatically adds closing HTML/XML tags |
+| [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) | Automatically renames paired HTML/XML tags |
+| [Autodesk Platform Services](https://marketplace.visualstudio.com/items?itemName=petrbroz.vscode-forge-tools) | Tools for working with Autodesk Forge APIs |
+| [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) | Manage and deploy to Azure App Service |
+| [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) | Manage Azure databases like Cosmos DB |
+| [Azure Storage](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage) | Explore and manage Azure Storage accounts |
+| [Azure Virtual Machines](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurevirtualmachines) | Manage Azure Virtual Machines directly in VS Code |
+| [Bracket Pair Color DLW](https://marketplace.visualstudio.com/items?itemName=BracketPairColorDLW.bracket-pair-color-dlw) | Colors matching brackets for better readability |
+| [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) | Jump to CSS definitions directly from HTML |
+| [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) | Maintains consistent coding styles across editors |
+| [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) | Snippets for React, Redux, GraphQL, and React Native |
+| [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) | Integrates ESLint for JavaScript/TypeScript linting |
+| [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) | Highlights indentation levels with colors |
+| [Node.js Modules Intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense) | Autocompletion for Node.js modules |
+| [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss) | Syntax highlighting and Intellisense for PostCSS |
+| [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | Code formatting using Prettier |
+| [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) | Intellisense and tools for Prisma ORM |
+| [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) | Autocomplete and linting for Tailwind CSS |
+| [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) | Highlights TODOs, FIXMEs, and similar comments |
+| [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) | Real-time collaboration and debugging |
+
+
+---
+
 ## 🧾 Presentations & Design
 
 | Tool | Purpose |

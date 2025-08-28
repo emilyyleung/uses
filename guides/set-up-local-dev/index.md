@@ -1,6 +1,10 @@
-# Set up local development environment
+# Local Development Environment Setup Guide
 
-1. Install the following software:
+Welcome! This guide will help you set up a local development environment on Windows using Ubuntu (via Windows Terminal). Follow each section to prepare your system for development.
+
+---
+
+## 1. Required Software:
 
 - Windows Terminal
 - VS Code
@@ -8,10 +12,15 @@
 - Bruno Client
 - Navicat (or any other postgreSQL GUI)
 
-2. Install the follow VSCode plugins
+---
 
+## 2. Recommended VS Code Extensions
 
-3. Install the following inside of Windows Terminal:
+Install your preferred VS Code extensions to enhance your workflow. (Add your favorites here.)
+
+---
+
+## 3. Install Tools in Ubuntu (via Windows Terminal)
 
 - Ubuntu
 - PostgreSQL
@@ -20,6 +29,8 @@
 - [Github CLI (gh cli)](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
 - Python3
 - [NodeJS (nvm)](https://nodejs.org/en/download)
+
+**Install NodeJS using nvm:**
 
 ```bash
 # Download and install nvm:
@@ -34,10 +45,9 @@ nvm install 22
 # Verify the Node.js version:
 node -v # Should print "v22.18.0".
 nvm current # Should print "v22.18.0".
-
-# Verify npm version:
 npm -v # Should print "10.9.3".
 ```
+
 - [PM2](https://pm2.keymetrics.io/docs/usage/quick-start/)
 
 ```bash
@@ -52,7 +62,8 @@ npm install -g serve
 
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Docker Compose Plugin](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
-- Set Docker to work without running "sudo"
+
+**Configure Docker to run without sudo:**
 
 ```bash
 # Create the docker group (if it doesn't exist)
@@ -67,10 +78,17 @@ sudo usermod -aG docker $USER
 docker ps 
 ```
 
-- Docker Images (This is provided in docker-compose.yaml file)
-  - Minio (S3 bucket)
-  - MongoDB v8.0.12 (database)
-  - Mongo Express UI (gui for database)
+---
+
+## 4. Docker Images (via docker-compose.yaml)
+
+The following services are provided in the `docker-compose.yaml` file:
+
+- Minio (S3-compatible object storage)
+- MongoDB v8.0.12 (database)
+- Mongo Express UI (web GUI for MongoDB)
+
+Example `docker-compose.yaml`:
 
 ```yaml
 services:
@@ -122,37 +140,46 @@ volumes:
   minio-data:
 ```
 
-4. Create databases and assign a password to postgresql
+---
+
+## 5. PostgreSQL: Create Database and Set Password
+
+Connect to PostgreSQL and run:
+
 ```
-# Create database
+# Create a new database
 CREATE DATABASE "mydatabase";
 
-# Assign password
+# Set password for the postgres user
 ALTER USER postgres PASSWORD 'postgres';
 
-# Remove database
+# (Optional) Remove a database
 DROP DATABASE "mydatabase";
 ```
 
-5. Set up Minio so that buckets are public (private by default)
+## 6. Make Minio Buckets Public (Optional)
+
+By default, Minio buckets are private. To make a bucket public:
 
 ```bash
-# Have the minio docker container running, make sure you know the name
+# Ensure the Minio container is running and note the MINIO_ROOT_USER and MINIO_ROOT_PASSWORD from docker-compose.yaml
 
-# Note the MINIO_ROOT_USER and MINIO_ROOT_PASSWORD in docker-compose.yaml file
-
-# Execute a shell inside the docker container
+# Open a shell inside the Minio container
 docker exec -it minio sh
 
-# Run mc from your container shell, log in as a user "myminio" with credentials
+# Use the Minio client (mc) to log in
 mc alias set myminio http://localhost:9000 <MINIO_ROOT_USER> <MINIO_ROOT_PASSWORD>
 
-# Get list of buckets
+# List buckets
 mc ls myminio
 
-# Get status of bucket
+# Check bucket status
 mc anonymous get myminio/bcapp-dev-assets
 
 # Make the bucket public
 mc anonymous set public myminio/bcapp-dev-assets
 ```
+
+---
+
+You are now ready to start developing in your local environment!
